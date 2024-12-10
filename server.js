@@ -6,6 +6,7 @@ const port = process.env.PORT || 5000;
 
 // Load routes
 app.use('/', routes);
+app.use(express.json());
 
 // Start the server
 app.listen(port, () => {
